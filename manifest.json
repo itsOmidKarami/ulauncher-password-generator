@@ -1,0 +1,54 @@
+{
+  "required_api_version": "^2.0.0",
+  "name": "Password Generator",
+  "description": "Signed Password Generator",
+  "developer_name": "Reza Karami",
+  "icon": "images/icon.png",
+  "options": {
+    "query_debounce": 0.1
+  },
+  "preferences": [
+    {
+      "id": "kw",
+      "type": "keyword",
+      "name": "Password Generator",
+      "default_value": "pg"
+    },
+    {
+      "id": "password_namespace",
+      "type": "input",
+      "name": "Password Generator Namespace",
+      "default_value": ""
+    },
+    {
+      "id": "password_header",
+      "type": "input",
+      "name": "Password Header",
+      "default_value": ""
+    },
+    {
+      "id": "charlist",
+      "type": "select",
+      "name": "Default Charlist",
+      "default_value": "all",
+      "options" : [
+        {
+          "value" : "all",
+          "text" : "lowerupper-alphanumeric + special chars"
+        },
+        {
+          "value" : "alphanumeric",
+          "text" : "lowerupper-alphanumeric"
+        },
+        {
+          "value" : "loweralphanumeric",
+          "text" : "lower-alphanumeric"
+        },
+        {
+          "value" : "alphabets",
+          "text" : "lowerupper-alphabets"
+        }
+      ]
+    }
+  ]
+}
